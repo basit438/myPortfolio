@@ -68,4 +68,20 @@
         margin-bottom: 2rem;
     }
     
+
+}
+
+@media screen and (max-width: 576px){
+    .about_info{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about_description{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .about_info{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
