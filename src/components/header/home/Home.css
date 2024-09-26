@@ -1,0 +1,181 @@
+/* Fixes and improvements for home content */
+.homecontent {
+    display: grid;
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for home image with better positioning */
+.home-img {
+    background: url(../../../assets/myimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, 0.3);
+    order: 1;
+    justify-self: center;
+    animation: profile_animate 8s ease-in-out infinite 1s;
+    border-radius: 50%; /* To make it circular initially */
+}
+
+/* Animation for image, fixed values */
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+.home-data{
+display: flex;
+flex-direction: column;
+row-gap: 1.5rem;
+}
+/* Social icons styling */
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home__social-icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    transition: color 0.3s ease;
+}
+
+.home__social-icon:hover {
+    color: var(--title-color-dark);
+}
+
+/* Title, subtitle, and description */
+.home-title {
+    font-size: var(--biggest-font-size);
+    line-height: 1.3;
+    margin-bottom: var(--mb-0-25);
+    color: var(--title-color);
+}
+.home-name{
+    color: var(--title-color-dark);
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    margin-bottom: var(--mb-0-25);
+    padding-top: var(--mb-2-5);
+    
+}
+/* Contact button styling */
+.contact-btn {
+    background: linear-gradient(135deg, #6e72fc, #ad1deb); /* Gradient background */
+    border: none;
+    border-radius: 50px; /* Rounded edges for a modern look */
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* Adjust padding to make the button look balanced */
+    font-size: 1.2rem; /* Slightly larger font */
+    font-weight: 600; /* Make the text bold */
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: width 0.4s ease, height 0.4s ease;
+    border-radius: 50%;
+}
+
+.contact-btn:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #ad1deb, #6e72fc); /* Reverse gradient on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Deepen the shadow on hover */
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+}
+
+
+.home-subtitle {
+    position: relative;
+    font-size: var(--h3-font-size);
+    padding-left: 5.4rem;
+    font-weight: bold;
+    margin-bottom: var(--mb-1-5);
+    color: var(--text-color-dark);
+}
+
+.home-subtitle::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+}
+
+.home-description {
+    max-width: 400px;
+    /* margin-bottom: var(--mb-3); */
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+/* Scroll Down Button Styling */
+.home__scroll {
+    margin-top: 2rem;
+}
+
+.home-scroll-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--first-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.home-scroll-button:hover {
+    color: var(--first-color-dark);
+}
+
+.home-scroll-name {
+    font-size: var(--small-font-size);
+}
+
+.home-scroll-arrow {
+    font-size: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .homecontent {
+        grid-template-columns: 1fr;
+        text-align: center;
+        row-gap: 2rem;
+    }
+    .home-img {
+        width: 200px;
+        height: 200px;
+    }
+}
