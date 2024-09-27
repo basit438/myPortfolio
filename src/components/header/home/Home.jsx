@@ -1,5 +1,5 @@
 import React from 'react'
-import './home.css'
+import './Home.css'
 // import Header from '../header'
 import "../../../App.css";
 import Social from '../home/Social'
