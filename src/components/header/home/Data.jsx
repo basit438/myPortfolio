@@ -11,7 +11,7 @@ function Data() {
             <h3 className='home-subtitle'>A Frontend Developer</h3>
             <p className="home-description">I'm passionate about building excellent software that improves the lives of those around me.</p>
 
-            <button className='contact-btn'>Contact Me</button>
+            <button  className='contact-btn'><a href="https://www.linkedin.com/in/basit-manzoor-676233223">Contact Me</a></button>
             <ScrollDown/>
         </div>
     </div>

@@ -9,7 +9,7 @@ function Social() {
       <a href="https://www.linkedin.com/in/basit-manzoor-676233223" className='home__social-icon' target='_blank'>
       <i class='bx bxl-linkedin-square' ></i>
       </a>
-      <a href="#" className='home__social-icon' target='_blank'>
+      <a href="https://twitter.com" className='home__social-icon' target='_blank'>
         <i className="uil uil-twitter-alt"></i>
       </a>
       

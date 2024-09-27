@@ -37,13 +37,13 @@ function Footer() {
             <i class="bx bxl-instagram"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/basit-manzoor-676233223"
+            href="https://www.instagram.com/"
             className="footer_social-link"
             target="_blank"
           >
             <i class="bx bxl-telegram"></i>
           </a>
-          <a href="#" className="footer_social-link" target="_blank">
+          <a href="https://twitter.com" className="footer_social-link" target="_blank">
             <i className="uil uil-twitter-alt"></i>
           </a>
         </div>
