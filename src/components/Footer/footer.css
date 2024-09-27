@@ -57,7 +57,7 @@
     text-align: center;
     font-size: var(--smaller-font-size);
 }
-
+/* //responsiveness */
 @media screen and (max-width: 992px) {
     .footer_social-link{
         padding: 0.25rem;
