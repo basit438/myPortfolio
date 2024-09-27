@@ -4,7 +4,7 @@ function Backend() {
   return (
     <div className="skills_container">
       <div className="skills_content">
-        <h3 className="skills_title">Backend Developer</h3>
+        <h3 className="skills_title">Backend Development</h3>
 
         <div className="skills_box">
           <div className="skills_data">
