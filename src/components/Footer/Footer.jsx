@@ -30,7 +30,7 @@ function Footer() {
 
         <div className="footer_social">
           <a
-            href="https://github.com/basit438"
+            href="https://www.instagram.com/"
             className="footer_social-link"
             target="_blank"
           >
