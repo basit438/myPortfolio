@@ -23,9 +23,8 @@ function App() {
       <Skills/>
       <Services/>
       <Contact/>
-      <Footer/>
-
      </main>
+     <Footer/>
     </>
   )
 }
