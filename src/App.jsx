@@ -8,6 +8,7 @@ import Home from './components/header/home/Home.jsx';
 import About from './components/header/About/About.jsx'
 import Skills from './components/Skill/skills.jsx'
 import Services from './components/Services/Services.jsx'
+import Contact from './components/Contact/Contact.jsx'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
       <About/>
       <Skills/>
       <Services/>
+      <Contact/>
+
      </main>
     </>
   )
