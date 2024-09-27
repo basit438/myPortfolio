@@ -7,6 +7,7 @@ import Header from './components/header/Header.jsx';
 import Home from './components/header/home/Home.jsx';
 import About from './components/header/About/About.jsx'
 import Skills from './components/Skill/skills.jsx'
+import Services from './components/Services/Services.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Services/>
      </main>
     </>
   )
