@@ -9,6 +9,7 @@ import About from './components/header/About/About.jsx'
 import Skills from './components/Skill/skills.jsx'
 import Services from './components/Services/Services.jsx'
 import Contact from './components/Contact/Contact.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Skills/>
       <Services/>
       <Contact/>
+      <Footer/>
 
      </main>
     </>
